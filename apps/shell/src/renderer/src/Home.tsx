@@ -714,6 +714,7 @@ function ApiSettingsModal({ onClose }: { onClose: () => void }) {
   )
 }
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function AccountEntry({
   onStatusChange,
 }: {
@@ -956,6 +957,7 @@ function AccountEntry({
     }
   }, [themeFly])
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const startLogin = () => {
     // clicking again while waiting = relaunch the login (main kills the stale CLI, so the new device code is the live one)
     setLoginError(null)
@@ -1773,6 +1775,7 @@ export function Home() {
   const [loggedIn, setLoggedIn] = useState(false)
   // single source of account state: AccountEntry reports every change (initial
   // load, login, logout), keeping the greeting name and the nav entry in sync
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const handleAccountStatus = useCallback((s: AccountStatus | null) => {
     const on = s?.loggedIn ?? false
     setLoggedIn(on)

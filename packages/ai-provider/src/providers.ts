@@ -179,7 +179,7 @@ export async function fetchAvailableModels(
   if (apiKey && apiKey !== 'ollama') {
     headers['Authorization'] = `Bearer ${apiKey}`
   }
-  const response = await fetch(url, { method: 'GET', headers, signal })
+  const response = await fetch(url, { method: 'GET', headers, ...(signal ? { signal } : {}) })
   if (!response.ok) {
     const body = await response.text().catch(() => '')
     throw new Error(`Failed to fetch models (HTTP ${response.status}): ${body.slice(0, 200)}`)
