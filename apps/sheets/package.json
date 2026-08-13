@@ -1,9 +1,9 @@
 {
-  "name": "@genoffice/sheets",
+  "name": "@openoffice/sheets",
   "productName": "OpenOffice Sheets",
   "version": "0.1.0",
   "private": true,
-  "description": "Cross-platform AI-native spreadsheet compatibility prototype",
+  "description": "Windows-focused AI-native spreadsheet compatibility prototype",
   "license": "Apache-2.0",
   "main": "out/main/index.js",
   "scripts": {
@@ -23,14 +23,14 @@
   },
   "dependencies": {
     "@fluentui/react-icons": "^2.0.333",
-    "@genoffice/agent-core": "*",
-    "@genoffice/ai-provider": "*",
-    "@genoffice/ai-search": "*",
-    "@genoffice/docx-engine": "*",
-    "@genoffice/electron-utils": "*",
-    "@genoffice/file-parse": "*",
-    "@genoffice/i18n": "*",
-    "@genoffice/ui": "*",
+    "@openoffice/agent-core": "*",
+    "@openoffice/ai-provider": "*",
+    "@openoffice/ai-search": "*",
+    "@openoffice/docx-engine": "*",
+    "@openoffice/electron-utils": "*",
+    "@openoffice/file-parse": "*",
+    "@openoffice/i18n": "*",
+    "@openoffice/ui": "*",
     "@univerjs/core": "^0.25.1",
     "@univerjs/preset-sheets-conditional-formatting": "^0.25.1",
     "@univerjs/preset-sheets-core": "^0.25.1",
@@ -50,7 +50,7 @@
     "zod": "^4.3.6"
   },
   "devDependencies": {
-    "@genoffice/project-store": "*",
+    "@openoffice/project-store": "*",
     "@types/node": "^24.10.1",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
@@ -62,5 +62,5 @@
     "vite": "^7.3.1",
     "vitest": "^4.1.0"
   },
-  "author": "GenOffice"
+  "author": "OpenOffice"
 }
